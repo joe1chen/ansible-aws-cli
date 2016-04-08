@@ -2,10 +2,19 @@
 - name: 'Install Python PIP'
   tags: 'aws-cli'
   sudo: 'yes'
-  apt: >
-    pkg=python-pip
-    state=latest
-
+  apt:
+    name: python-pip
+    state: latest
+  when: ansible_os_family == 'Debian'"
+  
+- name: 'Install Python PIP'
+  tags: 'aws-cli'
+  sudo: 'yes'
+  yum:
+    name: python-pip
+    state: latest
+  when: ansible_os_family == 'RedHat'"
+  
 - name: 'Install AWS CLI'
   tags: 'aws-cli'
   sudo: 'yes'

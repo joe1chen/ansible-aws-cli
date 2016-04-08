@@ -6,9 +6,12 @@ galaxy_info:
   license: 'BSD'
   min_ansible_version: 1.6
   platforms:
-  - name: 'Ubuntu'
+  - name: Ubuntu
     versions:
-      - 'precise'
-  categories:
-    - 'development'
+      - precise
+  - name: EL
+    versions:
+	  - 7	  
+  galaxy_tags:
+    - development
 dependencies: []
