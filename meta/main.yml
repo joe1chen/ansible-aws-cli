@@ -11,7 +11,7 @@ galaxy_info:
       - precise
   - name: EL
     versions:
-      - 7	  
+      - 7
   galaxy_tags:
     - development
 dependencies: []
